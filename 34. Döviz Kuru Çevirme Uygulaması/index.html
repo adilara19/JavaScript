@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Döviz Kuru Hesaplama Uygulaması</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="main">
+            <div class="header-wrapper">
+                <h4>CURRENCY EXCHANGE CALCULATOR</h4>
+            </div>
+            <div class="content-wrapper">
+                <input id="amount" type="number" placeholder="Amount">
+                <select id="firstCurrencyOption">
+                    <option selected>USD</option>
+                    <option>AUD</option>
+                    <option>DKK</option>
+                    <option>EUR</option>
+                    <option>GBP</option>
+                    <option>CHF</option>
+                    <option>SEK</option>
+                    <option>CAD</option>
+                    <option>KWD</option>
+                    <option>NOK</option>
+                    <option>SAR</option>
+                    <option>JPY</option>
+                    <option>TRY</option>                    
+                </select>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+                <select id="secondCurrencyOption">
+                    <option selected>TRY</option>   
+                    <option>USD</option>
+                    <option>AUD</option>
+                    <option>DKK</option>
+                    <option>EUR</option>
+                    <option>GBP</option>
+                    <option>CHF</option>
+                    <option>SEK</option>
+                    <option>CAD</option>
+                    <option>KWD</option>
+                    <option>NOK</option>
+                    <option>SAR</option>
+                    <option>JPY</option>                    
+                </select>
+
+                <input type="number" id="result" readonly placeholder="Result">
+                <button id="clearButton" type="reset">Clear All</button>
+                <!-- <span>Copyright - Ayşe Dilara Öztürk</span> -->
+            </div>
+
+            <!--Heasplama Geçmişi Eklemek İçin-->
+            <div id="history">
+                <h4>Calculation History</h4>
+                <ul id="historyList"></ul>
+            </div>
+            <button id="saveButton" type="submit">Save</button>
+        </div>
+    </div>
+
+        <script src="currency.js"></script>
+        <script src="app.js"></script>
+</body>
+</html>
